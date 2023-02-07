@@ -1,0 +1,17 @@
+<!ELEMENT agenda (contatto*)>
+<!ELEMENT contatto (nome,indirizzo+,telefono*,email*,foto*)>
+<!ELEMENT nome (#PCDATA)>
+<!ELEMENT indirizzo (via, numero, citta, cap, provincia?)>
+<!ELEMENT via (#PCDATA)>
+<!ELEMENT numero (#PCDATA)>
+<!ELEMENT citta (#PCDATA)>
+<!ELEMENT cap (#PCDATA)>
+<!ELEMENT provincia (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+<!ATTLIST telefono tipo (casa | ufficio | cellulare) 'casa'>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT foto (#PCDATA)>
+<!ATTLIST foto src CDATA #REQUIRED desc CDATA #IMPLIED>
+<!ENTITY BO "40100">
+<!ENTITY MO "41100">
+<!ENTITY RE "42100">
